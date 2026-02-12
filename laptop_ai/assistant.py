@@ -1,42 +1,60 @@
+import time
 from voice import listen
 from gemini_ai import ask_gemini
 from speech import speak
+from command_handler import classify_command
+
+
+def clean_response(text):
+    return text.replace("\n", " ").strip()
 
 
 def main():
-    print("DeskBot is ready. Say something...")
-
+    print("\n===== DeskBot AI Assistant =====")
     speak("DeskBot is ready.")
 
     while True:
-        try:
-            # Listen to user
-            text = listen()
+        user_input = listen()
 
-            if not text:
-                continue
+        # Exit if no speech detected (after timeout)
+        if not user_input:
+            print("[STATE] No input detected. Exiting.")
+            speak("No input detected. Shutting down.")
+            break
 
-            print("You said:", text)
+        print(f"[USER] {user_input}")
 
-            # Exit condition
-            if text.lower() in ["exit", "quit", "stop"]:
-                speak("Shutting down. Goodbye.")
-                break
+        # ---- Command Classification ----
+        command_type = classify_command(user_input)
+        print(f"[ROUTER] Command type: {command_type}")
 
-            # Get AI response
-            response = ask_gemini(text)
+        # ---- Routing ----
+        if command_type == "exit":
+            speak("Shutting down. Goodbye.")
+            break
 
-            print("Gemini:", response)
+        elif command_type == "ai":
+            response = ask_gemini(user_input)
 
-            # Clean response for speech (remove newlines)
-            response_clean = response.replace("\n", " ")
+        elif command_type == "app":
+            response = "App command detected. Execution will be implemented soon."
 
-            # Speak response
-            speak(response_clean)
+        elif command_type == "file":
+            response = "File command detected. Execution will be implemented soon."
 
-        except Exception as e:
-            print("Error occurred:", e)
-            speak("Sorry, something went wrong.")
+        elif command_type == "utility":
+            response = "Utility command detected. Execution will be implemented soon."
+
+        elif command_type == "system":
+            response = "System control command detected. Execution will be implemented soon."
+
+        else:
+            response = "Command not recognized."
+
+        print(f"[BOT] {response}")
+
+        response_clean = clean_response(response)
+        speak(response_clean)
 
 
 if __name__ == "__main__":

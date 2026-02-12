@@ -1,25 +1,30 @@
 import speech_recognition as sr
 
-def listen():
-    r = sr.Recognizer()
+def listen(timeout=5, phrase_time_limit=20):
+    recognizer = sr.Recognizer()
+
+    # Increase energy threshold (less sensitive to noise)
+    recognizer.energy_threshold = 3000
+    recognizer.dynamic_energy_threshold = True
 
     with sr.Microphone() as source:
-        print("Listening...")
-        r.adjust_for_ambient_noise(source, duration=0.5)
+        print("[STATE] Listening...")
+        recognizer.adjust_for_ambient_noise(source, duration=1)
 
         try:
-            audio = r.listen(
+            audio = recognizer.listen(
                 source,
-                timeout=5,          # Wait max 5 sec for speech
-                phrase_time_limit=20 # Max speech length 8 sec
+                timeout=timeout,
+                phrase_time_limit=phrase_time_limit
             )
         except sr.WaitTimeoutError:
-            return "No speech detected"
+            return None
 
     try:
-        text = r.recognize_google(audio)
+        text = recognizer.recognize_google(audio)
         return text
     except sr.UnknownValueError:
-        return "Could not understand audio"
+        return None
     except sr.RequestError as e:
-        return f"Request error: {e}"
+        print(f"[ERROR] Speech recognition failed: {e}")
+        return None
