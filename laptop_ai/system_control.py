@@ -6,7 +6,7 @@ import pyautogui
 
 # ---------------- SAFE APPLICATION WHITELIST ----------------
 APP_WHITELIST = {
-    "chrome": r"C:\Program Files\Google\Chrome\Application\chrome.exe",
+    "chrome": r"C:/Program Files/Google/Chrome/Application/chrome.exe",
     "notepad": "notepad.exe",
     "calculator": "calc.exe",
     "explorer": "explorer.exe"
