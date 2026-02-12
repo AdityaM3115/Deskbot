@@ -1,50 +1,29 @@
 def classify_command(text):
-    """
-    Classifies user input into:
-    - app
-    - file
-    - utility
-    - exit
-    - ai
-    """
-
     text = text.lower().strip()
 
-    # -------- EXIT --------
+    # Exit
     if text in ["exit", "quit", "stop", "shutdown"]:
         return "exit"
 
-    # -------- OPEN / CLOSE (App Layer) --------
+    # App commands
     if text.startswith("open") or " open " in text:
         return "app"
 
     if "close" in text:
         return "app"
 
-    # -------- FILE --------
-    if any(phrase in text for phrase in [
-        "create file",
-        "create folder",
-        "make folder",
-        "rename file",
-        "rename folder",
-        "move file",
-        "copy file"
-    ]):
+    # File commands
+    if (
+        "create" in text and "file" in text
+    ) or "create folder" in text \
+       or "rename file" in text \
+       or "rename folder" in text \
+       or "copy file" in text \
+       or "move file" in text:
         return "file"
 
-    # -------- UTILITY --------
-    if any(phrase in text for phrase in [
-        "set timer",
-        "start timer",
-        "start stopwatch",
-        "stop stopwatch",
-        "reset stopwatch"
-    ]):
+    # Utility commands (future)
+    if "timer" in text or "stopwatch" in text or "remind me" in text:
         return "utility"
 
-    if "remind me" in text:
-        return "utility"
-
-    # -------- DEFAULT --------
     return "ai"
