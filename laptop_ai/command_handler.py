@@ -10,20 +10,19 @@ def classify_command(text):
 
     text = text.lower().strip()
 
-    # ---------------- EXIT COMMANDS ----------------
+    # -------- EXIT --------
     if text in ["exit", "quit", "stop", "shutdown"]:
         return "exit"
 
-    # ---------------- APP COMMANDS ----------------
-    app_actions = ["open", "launch", "start", "close"]
-    app_names = ["chrome", "notepad", "calculator", "explorer"]
+    # -------- OPEN / CLOSE (App Layer) --------
+    if text.startswith("open") or " open " in text:
+        return "app"
 
-    if any(action in text for action in app_actions):
-        if any(app in text for app in app_names):
-            return "app"
+    if "close" in text:
+        return "app"
 
-    # ---------------- FILE COMMANDS ----------------
-    file_phrases = [
+    # -------- FILE --------
+    if any(phrase in text for phrase in [
         "create file",
         "create folder",
         "make folder",
@@ -31,27 +30,21 @@ def classify_command(text):
         "rename folder",
         "move file",
         "copy file"
-    ]
-
-    if any(phrase in text for phrase in file_phrases):
+    ]):
         return "file"
 
-    # ---------------- UTILITY COMMANDS ----------------
-    # Timer
-    if any(word in text for word in ["set timer", "start timer"]):
+    # -------- UTILITY --------
+    if any(phrase in text for phrase in [
+        "set timer",
+        "start timer",
+        "start stopwatch",
+        "stop stopwatch",
+        "reset stopwatch"
+    ]):
         return "utility"
 
-    # Stopwatch
-    if any(word in text for word in ["start stopwatch", "stop stopwatch", "reset stopwatch"]):
-        return "utility"
-
-    # Reminder
     if "remind me" in text:
         return "utility"
 
-    # ---------------- SYSTEM CONTROL (Future Safe Placeholder) ----------------
-    if any(word in text for word in ["scroll", "volume", "mute", "screenshot"]):
-        return "system"
-
-    # ---------------- DEFAULT ----------------
+    # -------- DEFAULT --------
     return "ai"
