@@ -1,8 +1,11 @@
 import pyttsx3
+import threading
+
+_speech_lock = threading.Lock()
 
 def speak(text):
-    engine = pyttsx3.init()
-    engine.setProperty('rate', 170)  # optional: control speed
-    engine.say(text)
-    engine.runAndWait()
-    engine.stop()
+    with _speech_lock:
+        engine = pyttsx3.init()
+        engine.say(text)
+        engine.runAndWait()
+        engine.stop()

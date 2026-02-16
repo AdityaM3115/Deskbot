@@ -1,6 +1,6 @@
 import re
-from logger import log_info
-from file_control import (
+from ..logger import log_info
+from ..file_control import (
     create_folder,
     create_file,
     rename_file_keep_extension,

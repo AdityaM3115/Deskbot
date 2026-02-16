@@ -1,7 +1,7 @@
 import re
 import webbrowser
-from logger import log_info
-from system_control import (
+from ..logger import log_info
+from ..system_control import (
     open_application,
     close_active_window,
     open_system_folder,
