@@ -4,6 +4,8 @@ venv/
 # Python cache
 __pycache__/
 *.pyc
+folder_name/F:\vscode\deskbot\laptop_ai\logs
+
 
 # Environment variables
 .env
