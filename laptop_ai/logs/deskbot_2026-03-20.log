@@ -1,0 +1,52 @@
+2026-03-20 11:06:18,623 - INFO - Imported existing <module 'comtypes.gen' from 'F:\\vscode\\deskbot\\venv\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-03-20 11:06:18,623 - INFO - Using writeable comtypes cache directory: 'F:\vscode\deskbot\venv\Lib\site-packages\comtypes\gen'
+2026-03-20 11:06:34,297 - INFO - AFC is enabled with max remote calls: 10.
+2026-03-20 11:06:48,229 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-03-20 11:06:57,410 - INFO - AFC is enabled with max remote calls: 10.
+2026-03-20 11:07:03,265 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-03-20 11:08:06,557 - INFO - Imported existing <module 'comtypes.gen' from 'F:\\vscode\\deskbot\\venv\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-03-20 11:08:06,557 - INFO - Using writeable comtypes cache directory: 'F:\vscode\deskbot\venv\Lib\site-packages\comtypes\gen'
+2026-03-20 11:21:56,912 - INFO - Imported existing <module 'comtypes.gen' from 'F:\\vscode\\deskbot\\venv\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-03-20 11:21:56,927 - INFO - Using writeable comtypes cache directory: 'F:\vscode\deskbot\venv\Lib\site-packages\comtypes\gen'
+2026-03-20 11:22:28,891 - INFO - Imported existing <module 'comtypes.gen' from 'F:\\vscode\\deskbot\\venv\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-03-20 11:22:28,891 - INFO - Using writeable comtypes cache directory: 'F:\vscode\deskbot\venv\Lib\site-packages\comtypes\gen'
+2026-03-20 11:48:18,108 - INFO - Imported existing <module 'comtypes.gen' from 'F:\\vscode\\deskbot\\venv\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-03-20 11:48:18,108 - INFO - Using writeable comtypes cache directory: 'F:\vscode\deskbot\venv\Lib\site-packages\comtypes\gen'
+2026-03-20 11:48:55,752 - INFO - Imported existing <module 'comtypes.gen' from 'F:\\vscode\\deskbot\\venv\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-03-20 11:48:55,752 - INFO - Using writeable comtypes cache directory: 'F:\vscode\deskbot\venv\Lib\site-packages\comtypes\gen'
+2026-03-20 11:49:20,961 - INFO - AFC is enabled with max remote calls: 10.
+2026-03-20 11:49:29,849 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-03-20 11:49:46,511 - INFO - Imported existing <module 'comtypes.gen' from 'F:\\vscode\\deskbot\\venv\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-03-20 11:49:46,512 - INFO - Using writeable comtypes cache directory: 'F:\vscode\deskbot\venv\Lib\site-packages\comtypes\gen'
+2026-03-20 11:50:11,783 - INFO - Opening website: https://www.current.com
+2026-03-20 11:50:40,051 - INFO - Opening website: https://www.videos.com
+2026-03-20 11:50:49,026 - INFO - Opening website: https://www.youtube.com
+2026-03-20 11:52:13,198 - INFO - Imported existing <module 'comtypes.gen' from 'F:\\vscode\\deskbot\\venv\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-03-20 11:52:13,198 - INFO - Using writeable comtypes cache directory: 'F:\vscode\deskbot\venv\Lib\site-packages\comtypes\gen'
+2026-03-20 11:52:29,642 - INFO - AFC is enabled with max remote calls: 10.
+2026-03-20 11:52:34,265 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-03-20 11:52:59,951 - INFO - AFC is enabled with max remote calls: 10.
+2026-03-20 11:53:07,117 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-03-20 11:54:08,600 - INFO - Imported existing <module 'comtypes.gen' from 'F:\\vscode\\deskbot\\venv\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-03-20 11:54:08,600 - INFO - Using writeable comtypes cache directory: 'F:\vscode\deskbot\venv\Lib\site-packages\comtypes\gen'
+2026-03-20 11:54:25,252 - INFO - AFC is enabled with max remote calls: 10.
+2026-03-20 11:54:30,095 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-03-20 11:54:43,966 - INFO - Imported existing <module 'comtypes.gen' from 'F:\\vscode\\deskbot\\venv\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-03-20 11:54:43,966 - INFO - Using writeable comtypes cache directory: 'F:\vscode\deskbot\venv\Lib\site-packages\comtypes\gen'
+2026-03-20 11:55:23,779 - INFO - Imported existing <module 'comtypes.gen' from 'F:\\vscode\\deskbot\\venv\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-03-20 11:55:23,779 - INFO - Using writeable comtypes cache directory: 'F:\vscode\deskbot\venv\Lib\site-packages\comtypes\gen'
+2026-03-20 11:55:44,663 - INFO - AFC is enabled with max remote calls: 10.
+2026-03-20 11:55:56,206 - INFO - Imported existing <module 'comtypes.gen' from 'F:\\vscode\\deskbot\\venv\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-03-20 11:55:56,206 - INFO - Using writeable comtypes cache directory: 'F:\vscode\deskbot\venv\Lib\site-packages\comtypes\gen'
+2026-03-20 11:56:33,996 - INFO - Imported existing <module 'comtypes.gen' from 'F:\\vscode\\deskbot\\venv\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-03-20 11:56:33,996 - INFO - Using writeable comtypes cache directory: 'F:\vscode\deskbot\venv\Lib\site-packages\comtypes\gen'
+2026-03-20 11:57:10,411 - INFO - Imported existing <module 'comtypes.gen' from 'F:\\vscode\\deskbot\\venv\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-03-20 11:57:10,411 - INFO - Using writeable comtypes cache directory: 'F:\vscode\deskbot\venv\Lib\site-packages\comtypes\gen'
+2026-03-20 11:58:01,163 - INFO - Imported existing <module 'comtypes.gen' from 'F:\\vscode\\deskbot\\venv\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-03-20 11:58:01,163 - INFO - Using writeable comtypes cache directory: 'F:\vscode\deskbot\venv\Lib\site-packages\comtypes\gen'
+2026-03-20 11:59:16,854 - INFO - Imported existing <module 'comtypes.gen' from 'F:\\vscode\\deskbot\\venv\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-03-20 11:59:16,854 - INFO - Using writeable comtypes cache directory: 'F:\vscode\deskbot\venv\Lib\site-packages\comtypes\gen'
+2026-03-20 11:59:53,165 - INFO - Imported existing <module 'comtypes.gen' from 'F:\\vscode\\deskbot\\venv\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-03-20 11:59:53,165 - INFO - Using writeable comtypes cache directory: 'F:\vscode\deskbot\venv\Lib\site-packages\comtypes\gen'
+2026-03-20 12:34:45,026 - INFO - Imported existing <module 'comtypes.gen' from 'F:\\vscode\\deskbot\\venv\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-03-20 12:34:45,026 - INFO - Using writeable comtypes cache directory: 'F:\vscode\deskbot\venv\Lib\site-packages\comtypes\gen'

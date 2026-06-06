@@ -1,0 +1,6 @@
+2026-02-27 10:24:00,398 - INFO - Imported existing <module 'comtypes.gen' from 'F:\\vscode\\deskbot\\venv\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-02-27 10:24:00,399 - INFO - Using writeable comtypes cache directory: 'F:\vscode\deskbot\venv\Lib\site-packages\comtypes\gen'
+2026-02-27 10:24:24,290 - INFO - Opening website: https://www.youtube.com
+2026-02-27 10:24:59,527 - INFO - Opening application: calculator
+2026-02-27 10:31:29,377 - INFO - Imported existing <module 'comtypes.gen' from 'F:\\vscode\\deskbot\\venv\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-02-27 10:31:29,377 - INFO - Using writeable comtypes cache directory: 'F:\vscode\deskbot\venv\Lib\site-packages\comtypes\gen'

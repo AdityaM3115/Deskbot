@@ -1,31 +1,52 @@
 import re
 
-def classify_command(user_input):
+FILLER_WORDS = [
+    "please", "could", "you", "kindly",
+    "can", "would", "the", "a", "an"
+]
 
-    lower_input = user_input.lower()
+SYSTEM_INTENTS = {
+    "file": ["create", "rename", "copy", "move"],
+    "utility": ["timer", "stopwatch", "remind", "calculate", "date", "time"],
+    "app": ["open", "launch", "start", "close"]
+}
 
-    # -------- FILE COMMANDS --------
-    if any(word in lower_input for word in ["create", "rename", "copy", "move"]):
+
+def normalize(text):
+    text = text.lower()
+    text = re.sub(r'[^\w\s]', '', text)
+    words = text.split()
+    words = [w for w in words if w not in FILLER_WORDS]
+    return words
+
+
+def score_intent(words, keywords):
+    score = 0
+    for w in words:
+        if w in keywords:
+            score += 1
+    return score
+
+
+def classify_command(text):
+    words = normalize(text)
+
+    file_score = score_intent(words, SYSTEM_INTENTS["file"])
+    utility_score = score_intent(words, SYSTEM_INTENTS["utility"])
+    app_score = score_intent(words, SYSTEM_INTENTS["app"])
+
+    max_score = max(file_score, utility_score, app_score)
+
+    if max_score == 0:
+        return "ai"
+
+    if file_score == max_score:
         return "file"
 
-    # -------- SPOTIFY --------
-    if re.search(r"play\s+.+\s+on\s+spotify", lower_input):
-        return "app"
-
-    # -------- YOUTUBE --------
-    if re.search(r"open\s+.+\s+in\s+youtube", lower_input):
-        return "app"
-
-    # -------- GENERAL APP COMMANDS --------
-    if any(word in lower_input for word in ["open", "launch", "start", "close"]):
-        return "app"
-
-    # -------- UTILITY COMMANDS --------
-    if any(word in lower_input for word in [
-        "timer", "remind", "stopwatch",
-        "calculate", "time", "date"
-    ]):
+    if utility_score == max_score:
         return "utility"
 
-    # -------- FALLBACK --------
+    if app_score == max_score:
+        return "app"
+
     return "ai"
